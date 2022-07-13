@@ -1,9 +1,14 @@
 def decode(string)
   words = string.split('   ');
-  print(words);
-end
+  words.each { |word|
+   chars = word.split(' ');
+   print(chars);
+  }
 
+
+end
 decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...');
+
 
   # given a string, with words searated by three spaces -  .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...
   #   split the string and get the words  [.-,   -... --- -..-,   ..-. ..- .-.. .-..,   --- ..-.,   .-. ..- -... .. . ...]
