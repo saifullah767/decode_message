@@ -1,12 +1,21 @@
+def decode_char(char)
+  
+end
+
+def decode_word(word)
+  chars = word.split(' ');
+  chars.each { |char|
+    decode_char(char);
+  }
+end
+
 def decode(string)
   words = string.split('   ');
   words.each { |word|
-   chars = word.split(' ');
-   print(chars);
+    decode_word(word);
   }
-
-
 end
+
 decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...');
 
 
